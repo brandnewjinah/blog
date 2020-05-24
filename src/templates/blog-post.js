@@ -8,7 +8,7 @@ import { rhythm, scale } from "../utils/typography"
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
-  const siteTitle = data.site.siteMetadata.title
+  const siteTitle = `back home`
   const { previous, next } = pageContext
 
   return (
@@ -18,10 +18,14 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         description={post.frontmatter.description || post.excerpt}
       />
       <article>
-        <header>
+        <header
+          style={{
+            textAlign: `center`,
+          }}
+        >
           <h1
             style={{
-              marginTop: rhythm(1),
+              marginTop: rhythm(2.5),
               marginBottom: 0,
             }}
           >
@@ -31,16 +35,22 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             style={{
               ...scale(-1 / 5),
               display: `block`,
-              marginBottom: rhythm(1),
+              marginTop: rhythm(0.5),
+              marginBottom: rhythm(0.5),
             }}
           >
             {post.frontmatter.date}
           </p>
         </header>
-        <section dangerouslySetInnerHTML={{ __html: post.html }} />
+        <section
+          style={{
+            marginTop: rhythm(3),
+          }}
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
         <hr
           style={{
-            marginBottom: rhythm(1),
+            marginBottom: rhythm(3),
           }}
         />
         <footer>

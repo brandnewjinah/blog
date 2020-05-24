@@ -1,16 +1,17 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Blog`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Jinah Lee`,
+      summary: `UX designer turned into a front-end developer`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://brandnewjinah.github.io/`,
     social: {
       twitter: `kylemathews`,
     },
   },
+  pathPrefix: `/blog`,
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -79,5 +80,16 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Inter\:300,400,500,600,700`,
+          `Work Sans\:300,400,500,600,700,800,900`,
+          `Nanum Gothic\:400,700,800`,
+        ],
+        display: "swap",
+      },
+    },
   ],
 }

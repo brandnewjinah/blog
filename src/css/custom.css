@@ -1,0 +1,13 @@
+small {
+  color: #a1a1a1;
+}
+
+mark {
+  background: #fbf2ec;
+}
+
+ol {
+  list-style-position: outside;
+  margin-left: 1em;
+  margin-bottom: 1.5em;
+}
