@@ -1,4 +1,185 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://brandnewjinah.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 24 May 2020 13:51:39 GMT</lastBuildDate><item><title><![CDATA[Fetching API in react - in the simplest form]]></title><description><![CDATA[State 초기화 → API 불러오기 → API response 를 setState 하기 → response 를 render 하기 1 State 초기화 2 API 불러오고 setState 하기 3. data render 하기]]></description><link>https://brandnewjinah.github.io/2020/may/simple-react-api/</link><guid isPermaLink="false">https://brandnewjinah.github.io/2020/may/simple-react-api/</guid><pubDate>Wed, 20 May 2020 22:40:32 GMT</pubDate><content:encoded>&lt;p&gt;State 초기화 → API 불러오기 → API response 를 setState 하기 → response 를 render 하기&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://brandnewjinah.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 31 May 2020 22:59:28 GMT</lastBuildDate><item><title><![CDATA[RegEx]]></title><description><![CDATA[RegEx Password Requirement]]></description><link>https://brandnewjinah.github.io/2020/may/RegEx/</link><guid isPermaLink="false">https://brandnewjinah.github.io/2020/may/RegEx/</guid><pubDate>Sat, 30 May 2020 12:40:32 GMT</pubDate><content:encoded>&lt;h1&gt;RegEx&lt;/h1&gt;
+&lt;p&gt;Password Requirement&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;//7-16 only characters, numeric digits, underscore&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;//first character must be a letter&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;Za&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;z&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;\w&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;16&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;$&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;//6-20 at least one numeric digit, one uppercase and one lowercase&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;\d&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;a&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;z&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;Z&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;$&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;//7-15 at least one numeric digit, a special character&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;@#$&lt;span class=&quot;token operator&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;a&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;zA&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;Z0&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;@#$&lt;span class=&quot;token operator&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;$&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;//6 or more characters, at least one digit, at least one lowercase and at least one uppercase&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;\d&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;a&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;z&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;Z&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Git Review]]></title><description><![CDATA[git git flow Local: 내컴퓨터 Remote: github github 을 로컬에 클론하면 Master Branch 가 생성이된다. No conflict flow 다른 사람의 업데이트를 pull해서 받아오면 git checkout…]]></description><link>https://brandnewjinah.github.io/2020/may/git/</link><guid isPermaLink="false">https://brandnewjinah.github.io/2020/may/git/</guid><pubDate>Thu, 28 May 2020 12:40:32 GMT</pubDate><content:encoded>&lt;h1&gt;git&lt;/h1&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;내 브랜치에서
+git add &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+git commit &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;m &lt;span class=&quot;token string&quot;&gt;&quot;&quot;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;//commit 하고나서 master 로 갈 수 있다.&lt;/span&gt;
+git checkout master
+git pull origin master &lt;span class=&quot;token comment&quot;&gt;//내파일과 master 로 비교한다 동일하면&lt;/span&gt;
+git checkout feature&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;jl
+git branch &lt;span class=&quot;token comment&quot;&gt;//확인해보기&lt;/span&gt;
+git push origin feature&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;jl
+&lt;span class=&quot;token comment&quot;&gt;// 주소가 뜨면 cmd 링크&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;git flow&lt;/p&gt;
+&lt;p&gt;Local: 내컴퓨터&lt;/p&gt;
+&lt;p&gt;Remote: github&lt;/p&gt;
+&lt;p&gt;github 을 로컬에 클론하면 Master Branch 가 생성이된다.&lt;/p&gt;
+&lt;p&gt;No conflict flow&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;- Master branch 에서 시작
+git branch feature/branch
+git checktout feature/login
+- 브랜치에서 작업
+git add .
+git commit
+git push origin feature/login
+//origin 에 내가 만든 feature/login 을 push 하겠다
+//remote 에 feature/login 이 생성이 된다
+- pull request (master 에게 pull 요청 merge 시켜달라 요청)
+- merge 가 되면 master 가 업데이트
+//이제 local 에 있는 master 를 update 해줘야한다
+git checkout master //master 로 이동한 후
+git pull origin master //merge 된 master branch 를 가져온다&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;다른 사람의 업데이트를 pull해서 받아오면&lt;/p&gt;
+&lt;p&gt;git checkout feature/login&lt;/p&gt;
+&lt;p&gt;git merge //내 브랜치와 merge&lt;/p&gt;
+&lt;p&gt;이때 conflict 가 일어나면 conflict 해결&lt;/p&gt;
+&lt;p&gt;git add&lt;/p&gt;
+&lt;p&gt;git commit&lt;/p&gt;
+&lt;p&gt;git push&lt;/p&gt;
+&lt;p&gt;git status 로 항상 상태 확인해주기&lt;/p&gt;
+&lt;p&gt;git checktout feature&lt;/p&gt;
+&lt;p&gt;git add .&lt;/p&gt;
+&lt;p&gt;git commit&lt;/p&gt;
+&lt;p&gt;git checkout master&lt;/p&gt;
+&lt;p&gt;git pull origin master&lt;/p&gt;
+&lt;p&gt;git checkout feature&lt;/p&gt;
+&lt;p&gt;git merge master&lt;/p&gt;
+&lt;p&gt;// 이럴경우 conflict 가 일어나기도 한다.&lt;/p&gt;
+&lt;p&gt;pr 성공후&lt;/p&gt;
+&lt;p&gt;git branch feature/newbranch&lt;/p&gt;
+&lt;p&gt;git checkout feature/newbranch&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How does authentication work?"]]></title><description><![CDATA[How does basic HTTP authentication work? note taken from medium article by Jignesh Kakadiya Client Side: You type url and press enter Client…]]></description><link>https://brandnewjinah.github.io/2020/may/authentication/</link><guid isPermaLink="false">https://brandnewjinah.github.io/2020/may/authentication/</guid><pubDate>Mon, 25 May 2020 12:40:32 GMT</pubDate><content:encoded>&lt;h1&gt;How does basic HTTP authentication work?&lt;/h1&gt;
+&lt;p&gt;note taken from medium article by &lt;a href=&quot;https://medium.com/@bitshadow/how-basic-http-authentication-and-session-works-d29af9caec31&quot;&gt;Jignesh Kakadiya&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Client Side:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You type url and press enter&lt;/li&gt;
+&lt;li&gt;Client finds the server to talk with, DNS resolutions, 2 way handshake etc.&lt;/li&gt;
+&lt;li&gt;Client sends a request to the server for getting the data corresponding to the path ”/”&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Server Side:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Server gets the request and goes to pull the content for the request&lt;/li&gt;
+&lt;li&gt;Server sends response back to the client containing the document browsers can render on the screen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;2. Signup&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Client Side:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fill out user id and pw&lt;/li&gt;
+&lt;li&gt;browser sends a request containing your id and pw to the server.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;The HTTP request looks like this:
+---------------------------------
+request: POST / HTTP/1.1
+         Host: medium.com
+         Content-Type: application/x-www-form-urlencoded
+         Content-Length: 30
+
+         userid=foo&amp;amp;password=mypassword&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Server side:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Receives the request, extracts the data (credentials) and creates an entry in their database with userid and password&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;if created successfully without any conflict, Server redirects user to login page.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;otherwise, throws some error message&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;to protect your pw, server creates hash of password and stores it&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;password_hash = hash.create(&amp;#39;mypassword&amp;#39;, ‘sha-1’);
+// password_hash = 2ef5aa5a037ae1be9c7cdd15649cf9fc686ddee2
+// used sha-1 (Secure Hash Algorithm 1) for generating hashed password&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;3. Login&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Client Side:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Browser sends credentials (id, pw) via login form, which points to for ex: “/login”&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Server Side:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Server gets request, extracts userid and pw&lt;/li&gt;
+&lt;li&gt;Searches for that userid in the database, extracts pw for that userid, and compares pw against pw sent by the client.&lt;/li&gt;
+&lt;li&gt;if hashed pw stored, it checks hash value.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;if pw matches, server creates the &lt;strong&gt;token&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;it’s a string that is used to identify user to that user won’t have to send id and pw with every request in future.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;4. Generating token, and tell client to use that token for future requests.&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Server side:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Server creates a random token&lt;/li&gt;
+&lt;li&gt;Server tells the client to store this token somewhere and use it for future request. Server does this by setting response header &lt;strong&gt;Set-Cookie&lt;/strong&gt; along with body.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;HTTP response looks like this:
+====================================================================
+HTTP/1.1 200 OK
+Set-Cookie: access_token=xyztoken; Path=/; Domain=foo.com; expires=Thu, 01 Jan 2050 00:00:00 GMT;
+--------------------------------------------------------------------&amp;lt;html&amp;gt;
+&amp;lt;body&amp;gt;
+&amp;lt;h1&amp;gt;Hello User!&amp;lt;/h1&amp;gt;
+(more user info)
+  .
+  .
+  .
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+====================================================================
+Set-Cookie header tells client to store access_token in cookie for path &amp;quot;/&amp;quot; and domain &amp;quot;foo.com&amp;quot; which &amp;quot;expires&amp;quot; on 1st day of 2050.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Client side:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Client gets the response&lt;/li&gt;
+&lt;li&gt;Client uses data (HTML) to render it on screen and value of set-cookie to set as a cookie.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;5. User browses site as logged in user&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Client side:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;user is logged in.&lt;/li&gt;
+&lt;li&gt;Client has cookie. When user navigates, browser will send back the cookie to ther server by setting it to request header cookie&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;HTTP request looks like this:
+
+GET https://www.foo.com/xyz HTTP/1.1
+Cookie: access_token=xyztoken;
+
+Client sends back that cookie to the server to identify current userid.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Server side:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Server receives a request&lt;/li&gt;
+&lt;li&gt;extracts access-token from cookie and searches for that token in database to see which user id it points to&lt;/li&gt;
+&lt;li&gt;Once server has user id, it’s easy to get all the information about the user and create specific HTML document for that user.&lt;/li&gt;
+&lt;li&gt;If token doesn’t match, server will redirect client to the login page, or show errors.&lt;/li&gt;
+&lt;li&gt;While sending data back to the client, server doesn’t have to send the Set-Cookie as a header again and again because client already have that cookie stored in a persistent storage.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;6. Log out&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Client side:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;When click on the logout, there’s a separate route for logout (ex: /logout)&lt;/li&gt;
+&lt;li&gt;Browser sends request to the server on that route with existing token set as a cookie.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Server side:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;extracts token, finds the userid and deletes the access token against that userid, and redirects user to login page.&lt;/li&gt;
+&lt;li&gt;Now toke removed from database, so it tells client to remove that toke from cookie because that token doesn’t exist anymore.&lt;/li&gt;
+&lt;li&gt;While redirecting user to login page, server uses &lt;strong&gt;Set-Cookie&lt;/strong&gt; header again, but sets access_token as empty string to tell browser to remove token from the cookie.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Set-Cookie: token=&amp;#39;&amp;#39;; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Notes from class&lt;/p&gt;
+&lt;p&gt;인증: 회원가입과 로그인&lt;/p&gt;
+&lt;p&gt;인증이 왜 필요? 서비스를 누가 쓰는지, 어떻게 사용하는지, 추적이 가능하오록&lt;/p&gt;
+&lt;p&gt;인증에 필요한것: 아이디, 이메일, 비밀번호&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Fetching API in react - in the simplest form]]></title><description><![CDATA[State 초기화 → API 불러오기 → API response 를 setState 하기 → response 를 render 하기 1 State 초기화 2 API 불러오고 setState 하기 3. data render 하기]]></description><link>https://brandnewjinah.github.io/2020/may/simple-react-api/</link><guid isPermaLink="false">https://brandnewjinah.github.io/2020/may/simple-react-api/</guid><pubDate>Wed, 20 May 2020 22:40:32 GMT</pubDate><content:encoded>&lt;p&gt;State 초기화 → API 불러오기 → API response 를 setState 하기 → response 를 render 하기&lt;/p&gt;
 &lt;h3&gt;1 State 초기화&lt;/h3&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token function&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;props&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
 	&lt;span class=&quot;token keyword&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;props&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
